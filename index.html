@@ -18,7 +18,7 @@
         </a>
         <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
         <div class="nav-links">
-          <a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#innovation">Innovation</a><a href="#team">Team</a>
+          <a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#innovation">Innovation</a><a href="#notes">Notes</a><a href="#team">Team</a>
           <a href="#future" class="nav-cta">View project <span>↗</span></a>
         </div>
       </nav>
@@ -76,6 +76,25 @@
         <div class="container innovation-grid">
           <div class="innovation-copy reveal"><p class="eyebrow">03 · The innovation</p><h2>The measurement happens<br /><i>while the work happens.</i></h2><p>SmartDry integrates sensing into the tool farmers already use to mix, turn, and spread grain. As grain is handled, the system captures conditions and evaluates drying readiness.</p><div class="innovation-notes"><div><b>Built into a familiar action</b><span>There is no separate checking routine. Farmers use the same motion they already trust for everyday grain drying.</span></div><div><b>Designed for real field conditions</b><span>Instead of asking farmers to judge invisible moisture by appearance alone, SmartDry brings useful guidance to the drying surface.</span></div><div><b>Practical intelligence, not complexity</b><span>The technology stays in the background and gives a simple answer at the moment it matters.</span></div></div><a href="#hardware" class="text-link">See the hardware concept <span>↓</span></a></div>
           <div class="innovation-workflow reveal delay-1" aria-label="SmartDry workflow from grain batch to farmer guidance"><div class="workflow-title"><span>SMARTDRY FLOW</span><i>From grain to guidance</i></div><div class="flow-node batch"><b>01</b><strong>GRAIN BATCH</strong><small>Grain is spread and turned</small></div><div class="flow-line"></div><div class="flow-node probe"><b>02</b><strong>SMART PROBE</strong><small>Integrated into the rake surface</small></div><div class="flow-line"></div><div class="flow-node sense"><b>03</b><strong>SENSE CONDITIONS</strong><small>Moisture + temperature captured</small></div><div class="flow-line"></div><div class="flow-node analyse"><b>04</b><strong>SMART ANALYSIS</strong><small>Drying trend is evaluated</small></div><div class="flow-line"></div><div class="flow-node guide"><b>05</b><strong>FARMER GUIDANCE</strong><small>READY / CONTINUE DRYING</small></div></div>
+        </div>
+      </section>
+
+      <section id="notes" class="section notes-section">
+        <div class="container notes-container">
+          <div class="notes-header">
+            <h2>Notes</h2>
+            <button class="notes-add-button" type="button" data-notes-add>+ Add a note</button>
+          </div>
+          <div class="notes-list" data-notes-list></div>
+        </div>
+        <div class="notes-dialog" data-notes-dialog hidden>
+          <div class="notes-dialog-backdrop" data-notes-cancel></div>
+          <form class="notes-editor" data-notes-form aria-labelledby="notes-editor-title">
+            <div class="notes-editor-header"><h3 id="notes-editor-title">Add a note</h3><button class="notes-close" type="button" aria-label="Close note editor" data-notes-cancel>&times;</button></div>
+            <label>Note title<input name="title" type="text" required /></label>
+            <label>Note content<textarea name="content" required></textarea></label>
+            <div class="notes-editor-actions"><button class="notes-cancel-button" type="button" data-notes-cancel>Cancel</button><button class="notes-save-button" type="submit">Save</button></div>
+          </form>
         </div>
       </section>
 
